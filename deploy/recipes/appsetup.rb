@@ -15,7 +15,7 @@ node[:deploy].each do |app_name, deploy|
       :user =>     (deploy[:database][:username] rescue nil),
       :password => (deploy[:database][:password] rescue nil),
       :db =>       (deploy[:database][:database] rescue nil),
-      
+      :db_encryption_key => (deploy[:database][:db_encryption_key] rescue nil),
       :smtphost =>  (deploy[:smtp][:host] rescue nil),
       :smtpuser => (deploy[:smtp][:username] rescue nil),
       :smtppassword => (deploy[:smtp][:password] rescue nil),
