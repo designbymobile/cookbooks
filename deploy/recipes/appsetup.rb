@@ -23,6 +23,7 @@ node[:deploy].each do |app_name, deploy|
       :aws_access_key => (deploy[:aws][:access_key] rescue nil),
       :aws_secret_key => (deploy[:aws][:secret_key] rescue nil),
       :client_buket => (deploy[:aws][:client_buket] rescue nil),
+      :tmp_buket => (deploy[:aws][:tmp_buket] rescue nil),
       :cache_cluster_host => (deploy[:aws][:cache_cluster_host] rescue nil)
       
       )
