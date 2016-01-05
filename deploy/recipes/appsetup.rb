@@ -25,8 +25,8 @@ node[:deploy].each do |app_name, deploy|
       :client_bucket => (deploy[:aws][:client_bucket] rescue nil),
       :tmp_bucket => (deploy[:aws][:tmp_bucket] rescue nil),
       :cache_cluster_host => (deploy[:aws][:cache_cluster_host] rescue nil),
-      :ELB_HOST_ZONE => (deploy[:aws][:elb_host_zone] rescue nil),
-      :ELB_ONE => (deploy[:aws][:elb_one] rescue nil)
+      :elb_host_zone => (deploy[:aws][:elb_host_zone] rescue nil),
+      :elb_one => (deploy[:aws][:elb_one] rescue nil)
       )
       
    
